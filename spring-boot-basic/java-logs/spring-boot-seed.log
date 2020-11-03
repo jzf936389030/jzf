@@ -1,0 +1,55 @@
+2020-10-23 16:19:29.778 spring-boot-seed [main] INFO  com.yimeng.seed.organ.Application - Starting Application on DESKTOP-SPHBJRU with PID 1728 (started by 93638 in C:\Users\93638\Desktop\java学习\spring-boot-basic)
+2020-10-23 16:19:29.778 spring-boot-seed [main] INFO  com.yimeng.seed.organ.Application - Starting Application on DESKTOP-SPHBJRU with PID 1728 (started by 93638 in C:\Users\93638\Desktop\java学习\spring-boot-basic)
+2020-10-23 16:19:29.786 spring-boot-seed [main] DEBUG com.yimeng.seed.organ.Application - Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2020-10-23 16:19:29.786 spring-boot-seed [main] DEBUG com.yimeng.seed.organ.Application - Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2020-10-23 16:19:29.788 spring-boot-seed [main] INFO  com.yimeng.seed.organ.Application - The following profiles are active: development
+2020-10-23 16:19:29.788 spring-boot-seed [main] INFO  com.yimeng.seed.organ.Application - The following profiles are active: development
+2020-10-23 16:19:29.834 spring-boot-seed [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52bf72b5: startup date [Fri Oct 23 16:19:29 GMT+08:00 2020]; root of context hierarchy
+2020-10-23 16:19:29.966 spring-boot-seed [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2020-10-23 16:19:30.978 spring-boot-seed [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$52eda8e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 16:19:31.227 spring-boot-seed [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2020-10-23 16:19:31.235 spring-boot-seed [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-23 16:19:31.235 spring-boot-seed [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2020-10-23 16:19:31.342 spring-boot-seed [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-23 16:19:31.343 spring-boot-seed [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1510 ms
+2020-10-23 16:19:31.536 spring-boot-seed [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-23 16:19:31.540 spring-boot-seed [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-23 16:19:31.540 spring-boot-seed [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-23 16:19:31.540 spring-boot-seed [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-23 16:19:31.540 spring-boot-seed [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-23 16:19:31.541 spring-boot-seed [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2020-10-23 16:19:31.960 spring-boot-seed [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-10-23 16:19:32.524 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization/],methods=[POST]}" onto public com.yimeng.seed.organ.model.Organization com.yimeng.seed.organ.controller.OrganizationController.add(com.yimeng.seed.organ.model.Organization)
+2020-10-23 16:19:32.525 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization/ || /organization/list],methods=[GET]}" onto public com.yimeng.seed.organ.model.ResponseListWraper<com.yimeng.seed.organ.model.Organization> com.yimeng.seed.organ.controller.OrganizationController.list(int,int)
+2020-10-23 16:19:32.525 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization/{orgid}],methods=[GET]}" onto public com.yimeng.seed.organ.model.Organization com.yimeng.seed.organ.controller.OrganizationController.getById(long)
+2020-10-23 16:19:32.525 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization/abc],methods=[GET]}" onto public java.lang.String com.yimeng.seed.organ.controller.OrganizationController.abc()
+2020-10-23 16:19:32.525 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization/{orgid}],methods=[DELETE]}" onto public com.yimeng.seed.organ.model.Organization com.yimeng.seed.organ.controller.OrganizationController.deleteById(java.lang.Long)
+2020-10-23 16:19:32.525 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization/{orgid}],methods=[PUT || POST]}" onto public com.yimeng.seed.organ.model.Organization com.yimeng.seed.organ.controller.OrganizationController.updateById(long,com.yimeng.seed.organ.model.Organization)
+2020-10-23 16:19:32.529 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-10-23 16:19:32.530 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-10-23 16:19:32.532 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-10-23 16:19:32.593 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-23 16:19:32.593 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-23 16:19:32.702 spring-boot-seed [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-10-23 16:19:32.862 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52bf72b5: startup date [Fri Oct 23 16:19:29 GMT+08:00 2020]; root of context hierarchy
+2020-10-23 16:19:32.902 spring-boot-seed [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-23 16:19:32.902 spring-boot-seed [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-23 16:19:32.916 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionHandle
+2020-10-23 16:19:32.933 spring-boot-seed [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-23 16:19:33.142 spring-boot-seed [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-10-23 16:19:33.143 spring-boot-seed [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2020-10-23 16:19:33.147 spring-boot-seed [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2020-10-23 16:19:33.149 spring-boot-seed [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-10-23 16:19:33.150 spring-boot-seed [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-23 16:19:33.162 spring-boot-seed [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-23 16:19:33.203 spring-boot-seed [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-23 16:19:33.314 spring-boot-seed [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2020-10-23 16:19:33.342 spring-boot-seed [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-23 16:19:33.351 spring-boot-seed [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-23 16:19:33.361 spring-boot-seed [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-10-23 16:19:33.377 spring-boot-seed [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2020-10-23 16:19:33.381 spring-boot-seed [main] INFO  com.yimeng.seed.organ.Application - Started Application in 4.076 seconds (JVM running for 5.282)
+2020-10-23 16:19:33.381 spring-boot-seed [main] INFO  com.yimeng.seed.organ.Application - Started Application in 4.076 seconds (JVM running for 5.282)
+2020-10-23 16:19:36.730 spring-boot-seed [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-23 16:19:36.730 spring-boot-seed [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-23 16:19:36.767 spring-boot-seed [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms

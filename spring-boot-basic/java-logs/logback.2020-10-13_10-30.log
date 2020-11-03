@@ -1,0 +1,4 @@
+2020-10-13 10:30:07.432 spring-boot-seed [http-nio-8080-exec-1] INFO  o.a.tomcat.util.http.parser.Cookie - A cookie header was received [1600326975,1600327127,1600327571; lastTime=2020-09-23+17%3A40%3A27] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2020-10-13 10:30:07.444 spring-boot-seed [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-13 10:30:07.444 spring-boot-seed [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-13 10:30:07.476 spring-boot-seed [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms

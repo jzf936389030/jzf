@@ -1,0 +1,18 @@
+# spring configuration
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource  # 使用druid数据源
+  profiles:
+    active: development
+
+server:
+  port: 8080
+
+# mybatis config
+mybatis:
+  mapper-locations: classpath:mapper/*.xml          #对应mapper 映射xml的路径
+  type-aliases-package: com.yimeng.seed.organ.model #对应实体类的路径
+
+# LOGGING
+logging:
+  config: classpath:logging-config.xml

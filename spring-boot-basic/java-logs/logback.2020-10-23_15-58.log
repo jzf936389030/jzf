@@ -1,0 +1,73 @@
+2020-10-23 15:58:05.352 spring-boot-seed [main] INFO  com.yimeng.seed.organ.Application - Starting Application on DESKTOP-SPHBJRU with PID 12500 (started by 93638 in C:\Users\93638\Desktop\java学习\spring-boot-basic)
+2020-10-23 15:58:05.352 spring-boot-seed [main] INFO  com.yimeng.seed.organ.Application - Starting Application on DESKTOP-SPHBJRU with PID 12500 (started by 93638 in C:\Users\93638\Desktop\java学习\spring-boot-basic)
+2020-10-23 15:58:05.359 spring-boot-seed [main] DEBUG com.yimeng.seed.organ.Application - Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2020-10-23 15:58:05.359 spring-boot-seed [main] DEBUG com.yimeng.seed.organ.Application - Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2020-10-23 15:58:05.360 spring-boot-seed [main] INFO  com.yimeng.seed.organ.Application - The following profiles are active: development
+2020-10-23 15:58:05.360 spring-boot-seed [main] INFO  com.yimeng.seed.organ.Application - The following profiles are active: development
+2020-10-23 15:58:05.416 spring-boot-seed [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f6ee6e4: startup date [Fri Oct 23 15:58:05 GMT+08:00 2020]; root of context hierarchy
+2020-10-23 15:58:05.535 spring-boot-seed [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2020-10-23 15:58:06.593 spring-boot-seed [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2020-10-23 15:58:06.603 spring-boot-seed [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-23 15:58:06.604 spring-boot-seed [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2020-10-23 15:58:06.701 spring-boot-seed [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-23 15:58:06.701 spring-boot-seed [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1285 ms
+2020-10-23 15:58:06.877 spring-boot-seed [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-23 15:58:06.880 spring-boot-seed [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-23 15:58:06.881 spring-boot-seed [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-23 15:58:06.881 spring-boot-seed [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-23 15:58:06.881 spring-boot-seed [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-23 15:58:06.881 spring-boot-seed [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2020-10-23 15:58:07.008 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization/],methods=[POST]}" onto public com.yimeng.seed.organ.model.Organization com.yimeng.seed.organ.controller.OrganizationController.add(com.yimeng.seed.organ.model.Organization)
+2020-10-23 15:58:07.009 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization/ || /organization/list],methods=[GET]}" onto public com.yimeng.seed.organ.model.ResponseListWraper<com.yimeng.seed.organ.model.Organization> com.yimeng.seed.organ.controller.OrganizationController.list(int,int)
+2020-10-23 15:58:07.010 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization/{orgid}],methods=[GET]}" onto public com.yimeng.seed.organ.model.Organization com.yimeng.seed.organ.controller.OrganizationController.getById(long)
+2020-10-23 15:58:07.010 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization/{orgid}],methods=[DELETE]}" onto public com.yimeng.seed.organ.model.Organization com.yimeng.seed.organ.controller.OrganizationController.deleteById(java.lang.Long)
+2020-10-23 15:58:07.010 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization/{orgid}],methods=[PUT || POST]}" onto public com.yimeng.seed.organ.model.Organization com.yimeng.seed.organ.controller.OrganizationController.updateById(long,com.yimeng.seed.organ.model.Organization)
+2020-10-23 15:58:07.010 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization/abc],methods=[GET]}" onto public java.lang.String com.yimeng.seed.organ.controller.OrganizationController.abc()
+2020-10-23 15:58:07.013 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api-docs/{swaggerGroup}/{apiDeclaration}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.mangofactory.swagger.models.dto.ApiListing> com.mangofactory.swagger.controllers.DefaultSwaggerController.getApiListing(java.lang.String,java.lang.String)
+2020-10-23 15:58:07.013 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.mangofactory.swagger.models.dto.ResourceListing> com.mangofactory.swagger.controllers.DefaultSwaggerController.getResourceListing(java.lang.String)
+2020-10-23 15:58:07.016 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-23 15:58:07.016 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-23 15:58:07.549 spring-boot-seed [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-10-23 15:58:07.872 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f6ee6e4: startup date [Fri Oct 23 15:58:05 GMT+08:00 2020]; root of context hierarchy
+2020-10-23 15:58:08.023 spring-boot-seed [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-23 15:58:08.023 spring-boot-seed [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-23 15:58:08.036 spring-boot-seed [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionHandle
+2020-10-23 15:58:08.053 spring-boot-seed [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-23 15:58:08.271 spring-boot-seed [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-10-23 15:58:08.271 spring-boot-seed [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2020-10-23 15:58:08.275 spring-boot-seed [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2020-10-23 15:58:08.280 spring-boot-seed [main] INFO  c.m.s.plugin.SwaggerPluginAdapter - Context refreshed
+2020-10-23 15:58:08.280 spring-boot-seed [main] INFO  c.m.s.plugin.SwaggerPluginAdapter - Found custom SwaggerSpringMvcPlugins
+2020-10-23 15:58:08.280 spring-boot-seed [main] INFO  c.m.s.plugin.SwaggerPluginAdapter - initializing plugin bean customImplementation
+2020-10-23 15:58:08.284 spring-boot-seed [main] INFO  c.m.s.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-23 15:58:08.286 spring-boot-seed [main] INFO  c.m.s.c.ClassOrApiAnnotationResourceGrouping - Group for method add was organization-controller
+2020-10-23 15:58:08.287 spring-boot-seed [main] INFO  c.m.s.s.ApiListingReferenceScanner - Request mapping: add belongs to groups: [[ResourceGroup{groupName='organization-controller', position=0}]] 
+2020-10-23 15:58:08.287 spring-boot-seed [main] INFO  c.m.s.s.ApiListingReferenceScanner - Adding resource to group:ResourceGroup{groupName='organization-controller', position=0} with description:Organization Controller for handler method:add
+2020-10-23 15:58:08.287 spring-boot-seed [main] INFO  c.m.s.c.ClassOrApiAnnotationResourceGrouping - Group for method list was organization-controller
+2020-10-23 15:58:08.288 spring-boot-seed [main] INFO  c.m.s.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='organization-controller', position=0}]] 
+2020-10-23 15:58:08.288 spring-boot-seed [main] INFO  c.m.s.s.ApiListingReferenceScanner - Adding resource to group:ResourceGroup{groupName='organization-controller', position=0} with description:Organization Controller for handler method:list
+2020-10-23 15:58:08.288 spring-boot-seed [main] INFO  c.m.s.c.ClassOrApiAnnotationResourceGrouping - Group for method getById was organization-controller
+2020-10-23 15:58:08.288 spring-boot-seed [main] INFO  c.m.s.s.ApiListingReferenceScanner - Request mapping: getById belongs to groups: [[ResourceGroup{groupName='organization-controller', position=0}]] 
+2020-10-23 15:58:08.288 spring-boot-seed [main] INFO  c.m.s.s.ApiListingReferenceScanner - Adding resource to group:ResourceGroup{groupName='organization-controller', position=0} with description:Organization Controller for handler method:getById
+2020-10-23 15:58:08.288 spring-boot-seed [main] INFO  c.m.s.c.ClassOrApiAnnotationResourceGrouping - Group for method deleteById was organization-controller
+2020-10-23 15:58:08.288 spring-boot-seed [main] INFO  c.m.s.s.ApiListingReferenceScanner - Request mapping: deleteById belongs to groups: [[ResourceGroup{groupName='organization-controller', position=0}]] 
+2020-10-23 15:58:08.288 spring-boot-seed [main] INFO  c.m.s.s.ApiListingReferenceScanner - Adding resource to group:ResourceGroup{groupName='organization-controller', position=0} with description:Organization Controller for handler method:deleteById
+2020-10-23 15:58:08.289 spring-boot-seed [main] INFO  c.m.s.c.ClassOrApiAnnotationResourceGrouping - Group for method updateById was organization-controller
+2020-10-23 15:58:08.289 spring-boot-seed [main] INFO  c.m.s.s.ApiListingReferenceScanner - Request mapping: updateById belongs to groups: [[ResourceGroup{groupName='organization-controller', position=0}]] 
+2020-10-23 15:58:08.289 spring-boot-seed [main] INFO  c.m.s.s.ApiListingReferenceScanner - Adding resource to group:ResourceGroup{groupName='organization-controller', position=0} with description:Organization Controller for handler method:updateById
+2020-10-23 15:58:08.289 spring-boot-seed [main] INFO  c.m.s.c.ClassOrApiAnnotationResourceGrouping - Group for method abc was organization-controller
+2020-10-23 15:58:08.289 spring-boot-seed [main] INFO  c.m.s.s.ApiListingReferenceScanner - Request mapping: abc belongs to groups: [[ResourceGroup{groupName='organization-controller', position=0}]] 
+2020-10-23 15:58:08.289 spring-boot-seed [main] INFO  c.m.s.s.ApiListingReferenceScanner - Adding resource to group:ResourceGroup{groupName='organization-controller', position=0} with description:Organization Controller for handler method:abc
+2020-10-23 15:58:08.289 spring-boot-seed [main] INFO  c.m.s.core.RequestMappingEvaluator - Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+2020-10-23 15:58:08.289 spring-boot-seed [main] INFO  c.m.s.core.RequestMappingEvaluator - Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+2020-10-23 15:58:08.289 spring-boot-seed [main] INFO  c.m.s.core.RequestMappingEvaluator - RequestMappingInfo did not match any include patterns: | {[/error]}
+2020-10-23 15:58:08.289 spring-boot-seed [main] INFO  c.m.s.core.RequestMappingEvaluator - RequestMappingInfo did not match any include patterns: | {[/error],produces=[text/html]}
+2020-10-23 15:58:08.295 spring-boot-seed [main] INFO  c.m.s.s.ApiListingReferenceScanner - Created resource listing Path: /default/organization-controller Description: organization-controller Position: 0
+2020-10-23 15:58:08.411 spring-boot-seed [main] INFO  c.m.s.core.SwaggerApiResourceListing - Added a resource listing with (1) api resources: 
+2020-10-23 15:58:08.411 spring-boot-seed [main] INFO  c.m.s.core.SwaggerApiResourceListing -   Organization Controller at location: /api-docs/default/organization-controller
+2020-10-23 15:58:08.414 spring-boot-seed [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-23 15:58:08.423 spring-boot-seed [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-23 15:58:08.433 spring-boot-seed [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-10-23 15:58:08.448 spring-boot-seed [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2020-10-23 15:58:08.452 spring-boot-seed [main] INFO  com.yimeng.seed.organ.Application - Started Application in 3.593 seconds (JVM running for 4.652)
+2020-10-23 15:58:08.452 spring-boot-seed [main] INFO  com.yimeng.seed.organ.Application - Started Application in 3.593 seconds (JVM running for 4.652)

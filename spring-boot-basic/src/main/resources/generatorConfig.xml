@@ -1,0 +1,56 @@
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<context id="DB2Tables" targetRuntime="MyBatis3">
+		<commentGenerator>
+			<!-- 是否去掉注释 -->
+			<property name="suppressDate" value="true" />
+			<property name="suppressAllComments" value="false" />
+		</commentGenerator>
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3306/saas_organ?useUnicode=true&amp;characterEncoding=UTF-8"
+			userId="saas_organ" password="saas_organ" />
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<!-- 实体定义地址 -->
+		<javaModelGenerator targetPackage="com.yimeng.seed.organ.model"
+			targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<!-- sql的配置文件定义 -->
+		<sqlMapGenerator targetPackage="mapper"
+			targetProject="src/main/resources">
+			<property name="enableSubPackages" value="false" />
+		</sqlMapGenerator>
+		<!-- DAO定义 XMLMAPPER是xml的配置方式，还有ANNOTabelMapper的是注解方式 -->
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.yimeng.seed.organ.mapper" targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+		<!-- table -->
+		<table tableName="organization" domainObjectName="Organization"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="true"
+			selectByExampleQueryId="false"></table>
+<!-- 		<table tableName="company" domainObjectName="Company" -->
+<!-- 			enableCountByExample="false" enableUpdateByExample="false" -->
+<!-- 			enableDeleteByExample="false" enableSelectByExample="true" -->
+<!-- 			selectByExampleQueryId="false"></table> -->
+<!-- 		<table tableName="department" domainObjectName="Department" -->
+<!-- 			enableCountByExample="false" enableUpdateByExample="false" -->
+<!-- 			enableDeleteByExample="false" enableSelectByExample="true" -->
+<!-- 			selectByExampleQueryId="false"></table> -->
+<!-- 		<table tableName="employee" domainObjectName="Employee" -->
+<!-- 			enableCountByExample="false" enableUpdateByExample="false" -->
+<!-- 			enableDeleteByExample="false" enableSelectByExample="true" -->
+<!-- 			selectByExampleQueryId="false"></table> -->
+
+<!-- 		<table tableName="employee_role" domainObjectName="EmployeeRole" -->
+<!-- 			enableCountByExample="false" enableUpdateByExample="false" -->
+<!-- 			enableDeleteByExample="false" enableSelectByExample="true" -->
+<!-- 			selectByExampleQueryId="false"></table> -->
+	</context>
+</generatorConfiguration>
