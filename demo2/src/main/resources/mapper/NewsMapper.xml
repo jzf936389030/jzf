@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sifei.mapper.NewsMapper">
+
+
+
+    <!--增加新闻-->
+    <update id="news" parameterType="com.sifei.domain.News"  >
+        INSERT INTO news (title,news,UID)VALUE (#{title},#{news},#{id})
+    </update>
+    <!--模糊查询-->
+    <select id="search" parameterType="java.lang.String" resultType="com.sifei.domain.News">
+        SELECT news,title FROM news WHERE news LIKE "%"#{search}"%"
+    </select>
+    <!--分业查询-->
+    <select id="searchAll" parameterType="INT" resultType="com.sifei.domain.News">
+        SELECT news,title,id FROM news   LIMIT  #{page},#{size}
+    </select>
+    <!--查询用户发布的所有新闻-->
+    <select id="searchUserAll" parameterType="INT" resultType="com.sifei.domain.News">
+        SELECT n.`title`,n.`news`FROM USER u,news n WHERE u.id=n.`UID` AND uid=#{id};
+    </select>
+
+    <!--根据标题查找新闻-->
+    <select id="searchNews" parameterType="java.lang.String" resultType="com.sifei.domain.News">
+        SELECT * FROM news WHERE title=#{title};
+    </select>
+    <!--评论功能-->
+    <select id="comment" parameterType="java.lang.Object" >
+        INSERT INTO `comment` (news_id,user_id,`text`)VALUE (#{nid},#{uid},#{text})
+    </select>
+
+
+    <select id="searchId" parameterType="INT" resultType="com.sifei.domain.News">
+        SELECT * FROM news WHERE id=#{id};
+    </select>
+
+
+</mapper>
+
+
+
+

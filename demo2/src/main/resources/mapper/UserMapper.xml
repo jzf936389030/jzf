@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sifei.mapper.UserMapper">
+
+    <!--查询所有用户-->
+    <select id="queryUserList" resultType="user">
+        select * from user
+    </select>
+        <!--注册账号-->
+    <insert id="add" parameterType="com.sifei.domain.User"  >
+        INSERT INTO USER (username,password,name)VALUE (#{username},#{password},#{name})
+    </insert>
+    <!--登入-->
+    <select id="Login" resultType="com.sifei.domain.User" parameterType="com.sifei.domain.User">
+        select * from user WHERE username=#{username} and password=#{password};
+    </select>
+
+    <!--判断密码是否存在-->
+    <select id="Judgelogin" parameterType="java.lang.String" resultType="java.lang.Boolean">
+        SELECT COUNT(id)from user WHERE username=#{username} AND password=#{password}
+    </select>
+    <!--修改密码-->
+    <update id="update"  parameterType="com.sifei.domain.User">
+        UPDATE USER set password=#{password} WHERE username=#{username}
+    </update>
+    <!--判断用户名是否存在-->
+    <select id="searchUserName" parameterType="java.lang.String" resultType="java.lang.Boolean">
+             SELECT COUNT(id)from user WHERE username=#{username}
+    </select>
+
+
+
+</mapper>
+
+
+
+
